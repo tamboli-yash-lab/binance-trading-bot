@@ -51,8 +51,11 @@ def main():
     print(f"Quantity: {args.qty}")
 
     print("\n=== RESPONSE ===")
-    print(response)
+    print(f"Order ID: {response['orderId']}")
+    print(f"Status: {response['status']}")
+    print(f"Executed Qty: {response['executedQty']}")
 
+    print("\n✅ Order executed successfully")
 
 if __name__ == "__main__":
     main()
